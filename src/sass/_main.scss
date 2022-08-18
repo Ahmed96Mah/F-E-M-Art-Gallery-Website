@@ -1,0 +1,644 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+main {
+  grid-area: main;
+  div {
+    &#mainTop {
+      width: 91.46%;
+      margin-left: 4.26%;
+      #topDetails {
+        h2 {
+          font-family: 'Big Shoulders Display', cursive;
+          font-weight: 900;
+          color: v.$black-clr;
+          line-height: 2.813rem;
+          font-size: 3.125rem;
+          margin: 1.563rem 0rem 1.813rem 0rem;
+        }
+        p {
+          font-family: 'Outfit', sans-serif;
+          margin: 0rem 0rem 2rem 0rem;
+          font-size: 1.125rem;
+          color: v.$drk-grey-clr;
+          line-height: 1.75rem;
+        }
+      }
+      img {
+        &#mainGrid1 {
+          width: 100%;
+        }
+        &#mainGrid1Tab,
+        &#mainGrid1Desk {
+          display: none;
+        }
+      }
+    }
+    &#mainButtom {
+      width: 91.46%;
+      margin-left: 4.26%;
+      margin-bottom: 7.5rem;
+      img {
+        &#mainGrid2 {
+          width: 100%;
+        }
+        &#mainGrid2Tab,
+        &#mainGrid2Desk {
+          display: none;
+        }
+      }
+      #lower {
+        img {
+          &#mainGrid3 {
+            width: 100%;
+            margin: 1rem 0rem;
+          }
+          &#mainGrid3Tab,
+          &#mainGrid3Desk {
+            display: none;
+          }
+        }
+      }
+      #inviteParag {
+        background-color: v.$black-clr;
+        padding: 3rem 1.5rem;
+        h2 {
+          font-family: 'Big Shoulders Display', cursive;
+          font-weight: 900;
+          color: v.$white-clr;
+          line-height: 2.813rem;
+          font-size: 3.125rem;
+          margin: 0rem 0rem 1.688rem 0rem;
+        }
+        p {
+          font-family: 'Outfit', sans-serif;
+          margin: 0rem;
+          font-size: 1.125rem;
+          color: v.$white-clr;
+          line-height: 1.75rem;
+        }
+      }
+    }
+    &#map {
+      width: 100%;
+      height: 82.458vh;
+      z-index: 0;
+      div {
+        &.leaflet-container {
+          height: 82.458vh;
+        }
+        &.leaflet-top {
+          margin-top: 6rem;
+        }
+        &.leaflet-bottom {
+          width: 65vw;
+          .leaflet-control-attribution {
+            width: 100%;
+            a {
+              svg {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &#locDetails {
+      background-color: v.$black-clr;
+      color: v.$white-clr;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 3.125rem;
+        line-height: 2.813rem;
+        margin-top: 3rem;
+        margin-bottom: 3.125rem;
+      }
+      div {
+        &.container {
+          h2 {
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 2rem;
+            line-height: 2rem;
+            color: v.$paige-clr;
+            margin-bottom: 1.75rem;
+          }
+          .detailsDiv {
+            p {
+              font-family: 'Outfit', sans-serif;
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+              margin: 0rem;
+            }
+          }
+          #locParag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            margin-bottom: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  a {
+    &#homeAnch {
+      text-decoration: none;
+      height: fit-content;
+      position: absolute;
+      top: 0rem;
+      left: 0rem;
+      z-index: 1;
+      span {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 800;
+        font-size: 1.25rem;
+        letter-spacing: 0.228rem;
+        line-height: 1.5rem;
+        color: v.$white-clr;
+        background-color: v.$black-clr;
+        padding: 1.5rem 2rem;
+      }
+      img {
+        height: 1.5rem;
+        background-color: v.$paige-clr;
+        padding: 1.5rem;
+      }
+      &:hover {
+        span {
+          background-color: v.$paige-clr;
+        }
+        img {
+          background-color: v.$black-clr;
+        }
+      }
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    div {
+      &#mainTop {
+        width: 89.713%;
+        margin-left: 5.143%;
+        #topDetails {
+          width: 31.0364%;
+        }
+        img {
+          &#mainGrid1,
+          &#mainGrid1Desk {
+            display: none;
+          }
+          &#mainGrid1Tab {
+            display: block;
+            width: 57.764%;
+            margin-bottom: 0.688rem;
+          }
+        }
+      }
+      &#mainButtom {
+        width: 89.713%;
+        margin-left: 5.143%;
+        img {
+          &#mainGrid2,
+          &#mainGrid2Desk {
+            display: none;
+          }
+          &#mainGrid2Tab {
+            display: block;
+            width: 57.765%;
+          }
+        }
+        #lower {
+          width: 40.638%;
+          img {
+            &#mainGrid3,
+            &#mainGrid3Desk {
+              display: none;
+            }
+            &#mainGrid3Tab {
+              display: block;
+              width: 100%;
+              margin-bottom: 0.688rem;
+            }
+          }
+        }
+        #inviteParag {
+          padding: 5.15rem 1.813rem;
+          h2 {
+            margin: 0rem 0rem 2rem 0rem;
+          }
+        }
+      }
+      &#map {
+        height: 58.59vh;
+        div {
+          &.leaflet-container {
+            height: 58.59vh;
+          }
+          &.leaflet-top {
+            margin-left: 1.85rem;
+          }
+          &.leaflet-bottom {
+            width: 40vw;
+          }
+        }
+      }
+      &#locDetails {
+        padding: 5.5rem 2.5rem 5rem 2.5rem;
+        h1 {
+          font-size: 3.438rem;
+          line-height: 3.125rem;
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+          margin-right: 6.063rem;
+        }
+        div {
+          &.container {
+            h2 {
+              font-size: 2rem;
+              line-height: 2rem;
+              margin-top: 0rem;
+              margin-bottom: 1.75rem;
+            }
+            .detailsDiv {
+              p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+              }
+            }
+            #locParag {
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      &#homeAnch {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    div {
+      &#mainTop {
+        width: 89.713%;
+        margin-left: 5.143%;
+        #topDetails {
+          width: 31.0364%;
+        }
+        img {
+          &#mainGrid1,
+          &#mainGrid1Desk {
+            display: none;
+          }
+          &#mainGrid1Tab {
+            display: block;
+            width: 57.764%;
+            margin-bottom: 0.688rem;
+          }
+        }
+      }
+      &#mainButtom {
+        width: 89.713%;
+        margin-left: 5.143%;
+        img {
+          &#mainGrid2,
+          &#mainGrid2Desk {
+            display: none;
+          }
+          &#mainGrid2Tab {
+            display: block;
+            width: 57.765%;
+          }
+        }
+        #lower {
+          width: 40.638%;
+          img {
+            &#mainGrid3,
+            &#mainGrid3Desk {
+              display: none;
+            }
+            &#mainGrid3Tab {
+              display: block;
+              width: 100%;
+              margin-bottom: 0.688rem;
+            }
+          }
+        }
+        #inviteParag {
+          padding: 5.15rem 1.813rem;
+          h2 {
+            margin: 0rem 0rem 2rem 0rem;
+          }
+        }
+      }
+      &#map {
+        height: 58.59vh;
+        div {
+          &.leaflet-container {
+            height: 58.59vh;
+          }
+          &.leaflet-top {
+            margin-left: 1.85rem;
+          }
+          &.leaflet-bottom {
+            width: 40vw;
+          }
+        }
+      }
+      &#locDetails {
+        padding: 5.5rem 2.5rem 5rem 2.5rem;
+        h1 {
+          font-size: 3.438rem;
+          line-height: 3.125rem;
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+          margin-right: 6.063rem;
+        }
+        div {
+          &.container {
+            h2 {
+              font-size: 2rem;
+              line-height: 2rem;
+              margin-top: 0rem;
+              margin-bottom: 1.75rem;
+            }
+            .detailsDiv {
+              p {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+              }
+            }
+            #locParag {
+              font-size: 1.125rem;
+              line-height: 1.75rem;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      &#homeAnch {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    div {
+      &#mainTop {
+        width: 77.137%;
+        margin-left: 11.43%;
+        #topDetails {
+          width: 33.531%;
+          h2 {
+            margin-top: 2.3rem;
+            margin-bottom: 1rem;
+            font-size: 2.85rem;
+            line-height: 3.35rem;
+          }
+          p {
+            font-size: 1.175rem;
+            line-height: 1.75rem;
+          }
+        }
+        img {
+          &#mainGrid1,
+          &#mainGrid1Tab {
+            display: none;
+          }
+          &#mainGrid1Desk {
+            display: block;
+            width: 57.207%;
+            margin-bottom: 1.875rem;
+          }
+        }
+      }
+      &#mainButtom {
+        width: 77.137%;
+        margin-left: 11.43%;
+        margin-bottom: 11.25rem;
+        img {
+          &#mainGrid2,
+          &#mainGrid2Tab {
+            display: none;
+          }
+          &#mainGrid2Desk {
+            display: block;
+            width: 57.207%;
+          }
+        }
+        #lower {
+          width: 40.09%;
+          img {
+            &#mainGrid3,
+            &#mainGrid3Tab {
+              display: none;
+            }
+            &#mainGrid3Desk {
+              display: block;
+              width: 100%;
+              margin-bottom: 1.875rem;
+            }
+          }
+        }
+        #inviteParag {
+          padding: 4.063rem 2.938rem;
+          h2 {
+            margin: 0rem 0rem 2rem 0rem;
+            font-size: 3.75rem;
+            line-height: 3.75rem;
+          }
+          p {
+            font-size: 1.375rem;
+            line-height: 2rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+      &#map {
+        height: 58.594vh;
+        div {
+          &.leaflet-container {
+            height: 58.594vh;
+          }
+          &.leaflet-top {
+            margin-left: 6.7rem;
+          }
+          &.leaflet-bottom {
+            width: 20vw;
+          }
+        }
+      }
+      &#locDetails {
+        padding: 6.5rem 7.313rem 8rem 7.313rem;
+        h1 {
+          font-size: 4.375rem;
+          line-height: 4.375rem;
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+          margin-right: 14.25rem;
+        }
+        div {
+          &.container {
+            h2 {
+              font-size: 2.25rem;
+              line-height: 2.25rem;
+              margin-top: 0rem;
+            }
+            .detailsDiv {
+              p {
+                font-size: 1.375rem;
+                line-height: 2rem;
+              }
+            }
+            #locParag {
+              font-size: 1.375rem;
+              line-height: 2rem;
+              margin-bottom: 0rem;
+              margin-top: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      &#homeAnch {
+        margin-left: 7.313rem;
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    div {
+      &#mainTop {
+        width: 77.137%;
+        margin-left: 11.43%;
+        #topDetails {
+          width: 31.531%;
+          h2 {
+            margin-top: 3.75rem;
+            margin-bottom: 2.5rem;
+            font-size: 3.75rem;
+            line-height: 3.75rem;
+          }
+          p {
+            font-size: 1.375rem;
+            line-height: 2rem;
+          }
+        }
+        img {
+          &#mainGrid1,
+          &#mainGrid1Tab {
+            display: none;
+          }
+          &#mainGrid1Desk {
+            display: block;
+            width: 57.207%;
+            margin-bottom: 1.875rem;
+          }
+        }
+      }
+      &#mainButtom {
+        width: 77.137%;
+        margin-left: 11.43%;
+        margin-bottom: 11.25rem;
+        img {
+          &#mainGrid2,
+          &#mainGrid2Tab {
+            display: none;
+          }
+          &#mainGrid2Desk {
+            display: block;
+            width: 57.207%;
+          }
+        }
+        #lower {
+          width: 40.09%;
+          img {
+            &#mainGrid3,
+            &#mainGrid3Tab {
+              display: none;
+            }
+            &#mainGrid3Desk {
+              display: block;
+              width: 100%;
+              margin-bottom: 1.875rem;
+            }
+          }
+        }
+        #inviteParag {
+          padding: 4.063rem 2.938rem;
+          h2 {
+            margin: 0rem 0rem 2rem 0rem;
+            font-size: 3.75rem;
+            line-height: 3.75rem;
+          }
+          p {
+            font-size: 1.375rem;
+            line-height: 2rem;
+            padding-right: 1rem;
+          }
+        }
+      }
+      &#map {
+        height: 58.594vh;
+        div {
+          &.leaflet-container {
+            height: 58.594vh;
+          }
+          &.leaflet-top {
+            margin-left: 9rem;
+          }
+          &.leaflet-bottom {
+            width: 20vw;
+          }
+        }
+      }
+      &#locDetails {
+        padding: 6.5rem 10.313rem 8rem 10.313rem;
+        h1 {
+          font-size: 4.375rem;
+          line-height: 4.375rem;
+          margin-top: 0rem;
+          margin-bottom: 0rem;
+          margin-right: 21.25rem;
+        }
+        div {
+          &.container {
+            h2 {
+              font-size: 2.25rem;
+              line-height: 2.25rem;
+              margin-top: 0rem;
+            }
+            .detailsDiv {
+              p {
+                font-size: 1.375rem;
+                line-height: 2rem;
+              }
+            }
+            #locParag {
+              font-size: 1.375rem;
+              line-height: 2rem;
+              margin-bottom: 0rem;
+              margin-top: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+    a {
+      &#homeAnch {
+        margin-left: 9.75rem;
+      }
+    }
+  }
+}
