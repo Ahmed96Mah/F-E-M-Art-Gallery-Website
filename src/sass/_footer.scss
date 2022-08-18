@@ -1,0 +1,138 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+footer {
+  grid-area: footer;
+  background-color: v.$black-clr;
+  padding: 3rem 2rem;
+  img {
+    width: 6.878rem;
+  }
+  p {
+    font-family: 'Outfit', sans-serif;
+    margin: 2.375rem 0rem;
+    color: v.$white-clr;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  #social {
+    width: 6.25rem;
+    img {
+      width: 1.25rem;
+    }
+  }
+  &.loc {
+    background-color: v.$paige-clr;
+    p {
+      color: v.$black-clr;
+    }
+    #social {
+      img {
+        filter: brightness(0) saturate(100%) invert(2%) sepia(1%)
+          saturate(1785%) hue-rotate(314deg) brightness(96%) contrast(86%);
+      }
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    padding: 3.5rem 2.5rem;
+    p {
+      width: 37.588%;
+      margin: 0rem;
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    padding: 3.5rem 2.5rem;
+    p {
+      width: 37.588%;
+      margin: 0rem;
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    padding: 5rem 7.313rem;
+    img {
+      width: 11.08rem;
+    }
+    p {
+      width: 34.88%;
+      margin: 0rem;
+    }
+    #social {
+      a {
+        &#faceIcn,
+        &#instaIcn,
+        &#twitIcn {
+          &:hover {
+            :first-child {
+              filter: brightness(0) saturate(100%) invert(96%) sepia(9%)
+                saturate(5159%) hue-rotate(306deg) brightness(88%) contrast(87%);
+            }
+          }
+        }
+      }
+    }
+    &.loc {
+      #social {
+        a {
+          &#faceIcn,
+          &#instaIcn,
+          &#twitIcn {
+            &:hover {
+              :first-child {
+                filter: brightness(0) saturate(100%) invert(99%) sepia(6%)
+                  saturate(1206%) hue-rotate(298deg) brightness(117%)
+                  contrast(100%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    padding: 5rem 10.313rem;
+    img {
+      width: 11.08rem;
+    }
+    p {
+      width: 34.88%;
+      margin: 0rem;
+    }
+    #social {
+      a {
+        &#faceIcn,
+        &#instaIcn,
+        &#twitIcn {
+          &:hover {
+            :first-child {
+              filter: brightness(0) saturate(100%) invert(96%) sepia(9%)
+                saturate(5159%) hue-rotate(306deg) brightness(88%) contrast(87%);
+            }
+          }
+        }
+      }
+    }
+    &.loc {
+      #social {
+        a {
+          &#faceIcn,
+          &#instaIcn,
+          &#twitIcn {
+            &:hover {
+              :first-child {
+                filter: brightness(0) saturate(100%) invert(99%) sepia(6%)
+                  saturate(1206%) hue-rotate(298deg) brightness(117%)
+                  contrast(100%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
