@@ -1,0 +1,1085 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+/* Media Queries */
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header' 'main' 'footer';
+  /* ----------------------- Media Queries ----------------------- */
+}
+body header .info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body header .info a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div#mainTop {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main div#mainTop #topDetails {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main div#mainButtom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main div#mainButtom #lower {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main div#mainButtom #lower #inviteParag {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main div#map div.leaflet-bottom .leaflet-control-attribution {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body footer div#social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  body {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  body header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div#mainTop {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div#mainButtom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main div#locDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  body {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  body header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div#mainTop {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div#mainButtom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main div#locDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  body {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  body header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div#mainTop {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main div#mainButtom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div#locDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  body {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  body header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div#mainTop {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main div#mainButtom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body main div#locDetails {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* ----------- Colors ----------- */
+header {
+  grid-area: header;
+  margin-bottom: 7.5rem;
+  /* ----------------------- Media Queries ----------------------- */
+}
+header #headerImg {
+  width: 100%;
+}
+header .info {
+  width: 91.46%;
+  margin-left: 4.26%;
+}
+header .info h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 3.438rem;
+  margin: 2rem 0rem 2.25rem 0rem;
+}
+header .info P {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #444444;
+  margin: 0rem 0rem 2rem 0rem;
+}
+header .info a {
+  text-decoration: none;
+  height: fit-content;
+}
+header .info a span {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.228rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  background-color: #151515;
+  padding: 1.5rem 2rem;
+}
+header .info a img {
+  height: 1.5rem;
+  background-color: #d5966c;
+  padding: 1.5rem;
+}
+header .info a:hover span {
+  background-color: #d5966c;
+}
+header .info a:hover img {
+  background-color: #151515;
+}
+header #headerImgTab,
+header #headerImgDesk {
+  display: none;
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  header {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  header #headerImg {
+    display: none;
+  }
+  header #headerImgTab {
+    display: block;
+    width: 56.901%;
+  }
+  header .info {
+    margin-left: -2.938rem;
+    margin-right: 2.438rem;
+  }
+  header .info h1 {
+    font-size: 4.375rem;
+    line-height: 4.063rem;
+    margin-bottom: 3.5rem;
+  }
+  header .info p {
+    margin: 0rem 1rem 3rem 0rem;
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  header {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  header #headerImg {
+    display: none;
+  }
+  header #headerImgTab {
+    display: block;
+    width: 56.901%;
+  }
+  header .info {
+    margin-left: -2.938rem;
+    margin-right: 2.438rem;
+  }
+  header .info h1 {
+    font-size: 4.375rem;
+    line-height: 4.063rem;
+    margin-bottom: 3.5rem;
+  }
+  header .info p {
+    margin: 0rem 1rem 3rem 0rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  header {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    background: linear-gradient(90deg, #151515 50%, #ffffff 50%);
+    margin-right: 10.25rem;
+    margin-bottom: 11.25rem;
+  }
+  header #headerImg {
+    display: none;
+  }
+  header #headerImgDesk {
+    display: block;
+    width: 42.353%;
+  }
+  header .info {
+    width: 28.322%;
+    margin-left: -4.063rem;
+    margin-right: 1.438rem;
+  }
+  header .info h1 {
+    position: absolute;
+    top: 11.813rem;
+    left: 11.95vw;
+    font-size: 5.67vw;
+    line-height: 6.5vw;
+    margin: 0rem;
+    background-color: #ffffff;
+    background: linear-gradient(90deg, #ffffff 63.5%, #151515 63.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  header .info p {
+    margin: 0rem 1rem 3rem 0rem;
+  }
+  header .info a span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  header {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    background: linear-gradient(90deg, #151515 50%, #ffffff 50%);
+    margin-right: 10.25rem;
+    margin-bottom: 11.25rem;
+  }
+  header #headerImg {
+    display: none;
+  }
+  header #headerImgDesk {
+    display: block;
+    width: 42.353%;
+  }
+  header .info {
+    width: 25.322%;
+    margin-left: -4.063rem;
+    margin-right: 2.438rem;
+  }
+  header .info h1 {
+    position: absolute;
+    top: 11.813rem;
+    left: 10.65vw;
+    font-size: 6.67vw;
+    line-height: 6.5vw;
+    margin: 0rem;
+    background-color: #ffffff;
+    background: linear-gradient(90deg, #ffffff 63.5%, #151515 63.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  header .info p {
+    margin: 0rem 2rem 3rem 0rem;
+  }
+}
+
+main {
+  grid-area: main;
+  /* ----------------------- Media Queries ----------------------- */
+}
+main div#mainTop {
+  width: 91.46%;
+  margin-left: 4.26%;
+}
+main div#mainTop #topDetails h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 900;
+  color: #151515;
+  line-height: 2.813rem;
+  font-size: 3.125rem;
+  margin: 1.563rem 0rem 1.813rem 0rem;
+}
+main div#mainTop #topDetails p {
+  font-family: 'Outfit', sans-serif;
+  margin: 0rem 0rem 2rem 0rem;
+  font-size: 1.125rem;
+  color: #444444;
+  line-height: 1.75rem;
+}
+main div#mainTop img#mainGrid1 {
+  width: 100%;
+}
+main div#mainTop img#mainGrid1Tab,
+main div#mainTop img#mainGrid1Desk {
+  display: none;
+}
+main div#mainButtom {
+  width: 91.46%;
+  margin-left: 4.26%;
+  margin-bottom: 7.5rem;
+}
+main div#mainButtom img#mainGrid2 {
+  width: 100%;
+}
+main div#mainButtom img#mainGrid2Tab,
+main div#mainButtom img#mainGrid2Desk {
+  display: none;
+}
+main div#mainButtom #lower img#mainGrid3 {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+main div#mainButtom #lower img#mainGrid3Tab,
+main div#mainButtom #lower img#mainGrid3Desk {
+  display: none;
+}
+main div#mainButtom #inviteParag {
+  background-color: #151515;
+  padding: 3rem 1.5rem;
+}
+main div#mainButtom #inviteParag h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 2.813rem;
+  font-size: 3.125rem;
+  margin: 0rem 0rem 1.688rem 0rem;
+}
+main div#mainButtom #inviteParag p {
+  font-family: 'Outfit', sans-serif;
+  margin: 0rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.75rem;
+}
+main div#map {
+  width: 100%;
+  height: 82.458vh;
+  z-index: 0;
+}
+main div#map div.leaflet-container {
+  height: 82.458vh;
+}
+main div#map div.leaflet-top {
+  margin-top: 6rem;
+}
+main div#map div.leaflet-bottom {
+  width: 65vw;
+}
+main div#map div.leaflet-bottom .leaflet-control-attribution {
+  width: 100%;
+}
+main div#map div.leaflet-bottom .leaflet-control-attribution a svg {
+  margin-right: 0.5rem;
+}
+main div#locDetails {
+  background-color: #151515;
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main div#locDetails h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3.125rem;
+  line-height: 2.813rem;
+  margin-top: 3rem;
+  margin-bottom: 3.125rem;
+}
+main div#locDetails div.container h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #d5966c;
+  margin-bottom: 1.75rem;
+}
+main div#locDetails div.container .detailsDiv p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin: 0rem;
+}
+main div#locDetails div.container #locParag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 3.5rem;
+}
+main a#homeAnch {
+  text-decoration: none;
+  height: fit-content;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 1;
+}
+main a#homeAnch span {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.228rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  background-color: #151515;
+  padding: 1.5rem 2rem;
+}
+main a#homeAnch img {
+  height: 1.5rem;
+  background-color: #d5966c;
+  padding: 1.5rem;
+}
+main a#homeAnch:hover span {
+  background-color: #d5966c;
+}
+main a#homeAnch:hover img {
+  background-color: #151515;
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  main {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  main div#mainTop {
+    width: 89.713%;
+    margin-left: 5.143%;
+  }
+  main div#mainTop #topDetails {
+    width: 31.0364%;
+  }
+  main div#mainTop img#mainGrid1,
+  main div#mainTop img#mainGrid1Desk {
+    display: none;
+  }
+  main div#mainTop img#mainGrid1Tab {
+    display: block;
+    width: 57.764%;
+    margin-bottom: 0.688rem;
+  }
+  main div#mainButtom {
+    width: 89.713%;
+    margin-left: 5.143%;
+  }
+  main div#mainButtom img#mainGrid2,
+  main div#mainButtom img#mainGrid2Desk {
+    display: none;
+  }
+  main div#mainButtom img#mainGrid2Tab {
+    display: block;
+    width: 57.765%;
+  }
+  main div#mainButtom #lower {
+    width: 40.638%;
+  }
+  main div#mainButtom #lower img#mainGrid3,
+  main div#mainButtom #lower img#mainGrid3Desk {
+    display: none;
+  }
+  main div#mainButtom #lower img#mainGrid3Tab {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.688rem;
+  }
+  main div#mainButtom #inviteParag {
+    padding: 5.15rem 1.813rem;
+  }
+  main div#mainButtom #inviteParag h2 {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  main div#map {
+    height: 58.59vh;
+  }
+  main div#map div.leaflet-container {
+    height: 58.59vh;
+  }
+  main div#map div.leaflet-top {
+    margin-left: 1.85rem;
+  }
+  main div#map div.leaflet-bottom {
+    width: 40vw;
+  }
+  main div#locDetails {
+    padding: 5.5rem 2.5rem 5rem 2.5rem;
+  }
+  main div#locDetails h1 {
+    font-size: 3.438rem;
+    line-height: 3.125rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 6.063rem;
+  }
+  main div#locDetails div.container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 1.75rem;
+  }
+  main div#locDetails div.container .detailsDiv p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  main div#locDetails div.container #locParag {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0rem;
+  }
+  main a#homeAnch {
+    margin-left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  main {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  main div#mainTop {
+    width: 89.713%;
+    margin-left: 5.143%;
+  }
+  main div#mainTop #topDetails {
+    width: 31.0364%;
+  }
+  main div#mainTop img#mainGrid1,
+  main div#mainTop img#mainGrid1Desk {
+    display: none;
+  }
+  main div#mainTop img#mainGrid1Tab {
+    display: block;
+    width: 57.764%;
+    margin-bottom: 0.688rem;
+  }
+  main div#mainButtom {
+    width: 89.713%;
+    margin-left: 5.143%;
+  }
+  main div#mainButtom img#mainGrid2,
+  main div#mainButtom img#mainGrid2Desk {
+    display: none;
+  }
+  main div#mainButtom img#mainGrid2Tab {
+    display: block;
+    width: 57.765%;
+  }
+  main div#mainButtom #lower {
+    width: 40.638%;
+  }
+  main div#mainButtom #lower img#mainGrid3,
+  main div#mainButtom #lower img#mainGrid3Desk {
+    display: none;
+  }
+  main div#mainButtom #lower img#mainGrid3Tab {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.688rem;
+  }
+  main div#mainButtom #inviteParag {
+    padding: 5.15rem 1.813rem;
+  }
+  main div#mainButtom #inviteParag h2 {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+  main div#map {
+    height: 58.59vh;
+  }
+  main div#map div.leaflet-container {
+    height: 58.59vh;
+  }
+  main div#map div.leaflet-top {
+    margin-left: 1.85rem;
+  }
+  main div#map div.leaflet-bottom {
+    width: 40vw;
+  }
+  main div#locDetails {
+    padding: 5.5rem 2.5rem 5rem 2.5rem;
+  }
+  main div#locDetails h1 {
+    font-size: 3.438rem;
+    line-height: 3.125rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 6.063rem;
+  }
+  main div#locDetails div.container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 1.75rem;
+  }
+  main div#locDetails div.container .detailsDiv p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  main div#locDetails div.container #locParag {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0rem;
+  }
+  main a#homeAnch {
+    margin-left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  main {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  main div#mainTop {
+    width: 77.137%;
+    margin-left: 11.43%;
+  }
+  main div#mainTop #topDetails {
+    width: 33.531%;
+  }
+  main div#mainTop #topDetails h2 {
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+    font-size: 2.85rem;
+    line-height: 3.35rem;
+  }
+  main div#mainTop #topDetails p {
+    font-size: 1.175rem;
+    line-height: 1.75rem;
+  }
+  main div#mainTop img#mainGrid1,
+  main div#mainTop img#mainGrid1Tab {
+    display: none;
+  }
+  main div#mainTop img#mainGrid1Desk {
+    display: block;
+    width: 57.207%;
+    margin-bottom: 1.875rem;
+  }
+  main div#mainButtom {
+    width: 77.137%;
+    margin-left: 11.43%;
+    margin-bottom: 11.25rem;
+  }
+  main div#mainButtom img#mainGrid2,
+  main div#mainButtom img#mainGrid2Tab {
+    display: none;
+  }
+  main div#mainButtom img#mainGrid2Desk {
+    display: block;
+    width: 57.207%;
+  }
+  main div#mainButtom #lower {
+    width: 40.09%;
+  }
+  main div#mainButtom #lower img#mainGrid3,
+  main div#mainButtom #lower img#mainGrid3Tab {
+    display: none;
+  }
+  main div#mainButtom #lower img#mainGrid3Desk {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.875rem;
+  }
+  main div#mainButtom #inviteParag {
+    padding: 4.063rem 2.938rem;
+  }
+  main div#mainButtom #inviteParag h2 {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+  main div#mainButtom #inviteParag p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    padding-right: 1rem;
+  }
+  main div#map {
+    height: 58.594vh;
+  }
+  main div#map div.leaflet-container {
+    height: 58.594vh;
+  }
+  main div#map div.leaflet-top {
+    margin-left: 6.7rem;
+  }
+  main div#map div.leaflet-bottom {
+    width: 20vw;
+  }
+  main div#locDetails {
+    padding: 6.5rem 7.313rem 8rem 7.313rem;
+  }
+  main div#locDetails h1 {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 14.25rem;
+  }
+  main div#locDetails div.container h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-top: 0rem;
+  }
+  main div#locDetails div.container .detailsDiv p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  main div#locDetails div.container #locParag {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2.5rem;
+  }
+  main a#homeAnch {
+    margin-left: 7.313rem;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  main {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  main div#mainTop {
+    width: 77.137%;
+    margin-left: 11.43%;
+  }
+  main div#mainTop #topDetails {
+    width: 31.531%;
+  }
+  main div#mainTop #topDetails h2 {
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+  main div#mainTop #topDetails p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  main div#mainTop img#mainGrid1,
+  main div#mainTop img#mainGrid1Tab {
+    display: none;
+  }
+  main div#mainTop img#mainGrid1Desk {
+    display: block;
+    width: 57.207%;
+    margin-bottom: 1.875rem;
+  }
+  main div#mainButtom {
+    width: 77.137%;
+    margin-left: 11.43%;
+    margin-bottom: 11.25rem;
+  }
+  main div#mainButtom img#mainGrid2,
+  main div#mainButtom img#mainGrid2Tab {
+    display: none;
+  }
+  main div#mainButtom img#mainGrid2Desk {
+    display: block;
+    width: 57.207%;
+  }
+  main div#mainButtom #lower {
+    width: 40.09%;
+  }
+  main div#mainButtom #lower img#mainGrid3,
+  main div#mainButtom #lower img#mainGrid3Tab {
+    display: none;
+  }
+  main div#mainButtom #lower img#mainGrid3Desk {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.875rem;
+  }
+  main div#mainButtom #inviteParag {
+    padding: 4.063rem 2.938rem;
+  }
+  main div#mainButtom #inviteParag h2 {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+  main div#mainButtom #inviteParag p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    padding-right: 1rem;
+  }
+  main div#map {
+    height: 58.594vh;
+  }
+  main div#map div.leaflet-container {
+    height: 58.594vh;
+  }
+  main div#map div.leaflet-top {
+    margin-left: 9rem;
+  }
+  main div#map div.leaflet-bottom {
+    width: 20vw;
+  }
+  main div#locDetails {
+    padding: 6.5rem 10.313rem 8rem 10.313rem;
+  }
+  main div#locDetails h1 {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 21.25rem;
+  }
+  main div#locDetails div.container h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-top: 0rem;
+  }
+  main div#locDetails div.container .detailsDiv p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  main div#locDetails div.container #locParag {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 2.5rem;
+  }
+  main a#homeAnch {
+    margin-left: 9.75rem;
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: #151515;
+  padding: 3rem 2rem;
+  /* ----------------------- Media Queries ----------------------- */
+}
+footer img {
+  width: 6.878rem;
+}
+footer p {
+  font-family: 'Outfit', sans-serif;
+  margin: 2.375rem 0rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+footer #social {
+  width: 6.25rem;
+}
+footer #social img {
+  width: 1.25rem;
+}
+footer.loc {
+  background-color: #d5966c;
+}
+footer.loc p {
+  color: #151515;
+}
+footer.loc #social img {
+  filter: brightness(0) saturate(100%) invert(2%) sepia(1%) saturate(1785%)
+    hue-rotate(314deg) brightness(96%) contrast(86%);
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  footer {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    padding: 3.5rem 2.5rem;
+  }
+  footer p {
+    width: 37.588%;
+    margin: 0rem;
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  footer {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    padding: 3.5rem 2.5rem;
+  }
+  footer p {
+    width: 37.588%;
+    margin: 0rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  footer {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    padding: 5rem 7.313rem;
+  }
+  footer img {
+    width: 11.08rem;
+  }
+  footer p {
+    width: 34.88%;
+    margin: 0rem;
+  }
+  footer #social a#faceIcn:hover :first-child,
+  footer #social a#instaIcn:hover :first-child,
+  footer #social a#twitIcn:hover :first-child {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(9%) saturate(5159%)
+      hue-rotate(306deg) brightness(88%) contrast(87%);
+  }
+  footer.loc #social a#faceIcn:hover :first-child,
+  footer.loc #social a#instaIcn:hover :first-child,
+  footer.loc #social a#twitIcn:hover :first-child {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(6%) saturate(1206%)
+      hue-rotate(298deg) brightness(117%) contrast(100%);
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  footer {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    padding: 5rem 10.313rem;
+  }
+  footer img {
+    width: 11.08rem;
+  }
+  footer p {
+    width: 34.88%;
+    margin: 0rem;
+  }
+  footer #social a#faceIcn:hover :first-child,
+  footer #social a#instaIcn:hover :first-child,
+  footer #social a#twitIcn:hover :first-child {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(9%) saturate(5159%)
+      hue-rotate(306deg) brightness(88%) contrast(87%);
+  }
+  footer.loc #social a#faceIcn:hover :first-child,
+  footer.loc #social a#instaIcn:hover :first-child,
+  footer.loc #social a#twitIcn:hover :first-child {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(6%) saturate(1206%)
+      hue-rotate(298deg) brightness(117%) contrast(100%);
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
