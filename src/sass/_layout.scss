@@ -1,0 +1,157 @@
+@use 'mixins' as m;
+
+body {
+  @include m.displayGrid(3, 1fr, 'header' 'main' 'footer');
+  header {
+    .info {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      a {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+  }
+  main {
+    @include m.displayFlex(column, nowrap, center, flex-start);
+    a {
+      @include m.displayFlex(row, nowrap, space-between, center);
+    }
+    div {
+      &#mainTop {
+        @include m.displayFlex(column, nowrap, center, flex-start);
+        #topDetails {
+          @include m.displayFlex(column, nowrap, center, flex-start);
+        }
+      }
+      &#mainButtom {
+        @include m.displayFlex(column, nowrap, center, flex-start);
+        #lower {
+          @include m.displayFlex(column, nowrap, center, flex-start);
+          #inviteParag {
+            @include m.displayFlex(column, nowrap, center, flex-start);
+          }
+        }
+      }
+      &#map {
+        div {
+          &.leaflet-bottom {
+            .leaflet-control-attribution {
+              @include m.displayFlex(row, nowrap, space-between, center);
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    @include m.displayFlex(column, nowrap, center, flex-start);
+    div {
+      &#social {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    header {
+      @include m.displayFlex(row, nowrap, space-between, center);
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      div {
+        &#mainTop {
+          @include m.displayFlex(row-reverse, nowrap, space-between, center);
+        }
+        &#mainButtom {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+        &#locDetails {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-between, flex-start);
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    header {
+      @include m.displayFlex(row, nowrap, space-between, center);
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      div {
+        &#mainTop {
+          @include m.displayFlex(row-reverse, nowrap, space-between, center);
+        }
+        &#mainButtom {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+        &#locDetails {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-between, flex-start);
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    header {
+      @include m.displayFlex(row, nowrap, flex-end, center);
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      div {
+        &#mainTop {
+          @include m.displayFlex(
+            row-reverse,
+            nowrap,
+            space-between,
+            flex-start
+          );
+        }
+        &#mainButtom {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+        &#locDetails {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-between, flex-start);
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    header {
+      @include m.displayFlex(row, nowrap, flex-end, center);
+    }
+    main {
+      @include m.displayFlex(column, nowrap, center, flex-start);
+      div {
+        &#mainTop {
+          @include m.displayFlex(
+            row-reverse,
+            nowrap,
+            space-between,
+            flex-start
+          );
+        }
+        &#mainButtom {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+        &#locDetails {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
+    }
+    footer {
+      @include m.displayFlex(row, nowrap, space-between, flex-start);
+    }
+  }
+}
