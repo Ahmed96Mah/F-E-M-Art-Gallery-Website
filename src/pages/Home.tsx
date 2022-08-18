@@ -84,6 +84,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
             id="faceIcn"
+            aria-label='Visit our Facebook page'
           >
             <Image id="facebookIcon" src={facebookLogo} alt="" />
           </a>
@@ -92,6 +93,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
             id="instaIcn"
+            aria-label='Visit our Instagram page'
           >
             <Image id="instagramIcon" src={instagramLogo} alt="" />
           </a>
@@ -100,6 +102,7 @@ const Home = () => {
             target="_blank"
             rel="noreferrer"
             id="twitIcn"
+            aria-label='Visit our Twitter page'
           >
             <Image id="twitterIcon" src={twitterLogo} alt="" />
           </a>
