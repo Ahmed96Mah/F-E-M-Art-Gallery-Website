@@ -1,0 +1,186 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+header {
+  grid-area: header;
+  margin-bottom: 7.5rem;
+  #headerImg {
+    width: 100%;
+  }
+  .info {
+    width: 91.46%;
+    margin-left: 4.26%;
+    h1 {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 900;
+      font-size: 3.75rem;
+      line-height: 3.438rem;
+      margin: 2rem 0rem 2.25rem 0rem;
+    }
+    P {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: v.$drk-grey-clr;
+      margin: 0rem 0rem 2rem 0rem;
+    }
+    a {
+      text-decoration: none;
+      height: fit-content;
+      span {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 800;
+        font-size: 1.25rem;
+        letter-spacing: 0.228rem;
+        line-height: 1.5rem;
+        color: v.$white-clr;
+        background-color: v.$black-clr;
+        padding: 1.5rem 2rem;
+      }
+      img {
+        height: 1.5rem;
+        background-color: v.$paige-clr;
+        padding: 1.5rem;
+      }
+      &:hover {
+        span {
+          background-color: v.$paige-clr;
+        }
+        img {
+          background-color: v.$black-clr;
+        }
+      }
+    }
+  }
+  #headerImgTab,
+  #headerImgDesk {
+    display: none;
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    #headerImg {
+      display: none;
+    }
+    #headerImgTab {
+      display: block;
+      width: 56.901%;
+    }
+    .info {
+      margin-left: -2.938rem;
+      margin-right: 2.438rem;
+      h1 {
+        font-size: 4.375rem;
+        line-height: 4.063rem;
+        margin-bottom: 3.5rem;
+      }
+      p {
+        margin: 0rem 1rem 3rem 0rem;
+      }
+    }
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    #headerImg {
+      display: none;
+    }
+    #headerImgTab {
+      display: block;
+      width: 56.901%;
+    }
+    .info {
+      margin-left: -2.938rem;
+      margin-right: 2.438rem;
+      h1 {
+        font-size: 4.375rem;
+        line-height: 4.063rem;
+        margin-bottom: 3.5rem;
+      }
+      p {
+        margin: 0rem 1rem 3rem 0rem;
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    background: linear-gradient(90deg, v.$black-clr 50%, v.$white-clr 50%);
+    margin-right: 10.25rem;
+    margin-bottom: 11.25rem;
+    #headerImg {
+      display: none;
+    }
+    #headerImgDesk {
+      display: block;
+      width: 42.353%;
+    }
+    .info {
+      width: 28.322%;
+      margin-left: -4.063rem;
+      margin-right: 1.438rem;
+      h1 {
+        position: absolute;
+        top: 11.813rem;
+        left: 11.95vw;
+        font-size: 5.67vw;
+        line-height: 6.5vw;
+        margin: 0rem;
+        background-color: v.$white-clr;
+        background: linear-gradient(
+          90deg,
+          v.$white-clr 63.5%,
+          v.$black-clr 63.5%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      p {
+        margin: 0rem 1rem 3rem 0rem;
+      }
+      a {
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    background: linear-gradient(90deg, v.$black-clr 50%, v.$white-clr 50%);
+    margin-right: 10.25rem;
+    margin-bottom: 11.25rem;
+    #headerImg {
+      display: none;
+    }
+    #headerImgDesk {
+      display: block;
+      width: 42.353%;
+    }
+    .info {
+      width: 25.322%;
+      margin-left: -4.063rem;
+      margin-right: 2.438rem;
+      h1 {
+        position: absolute;
+        top: 11.813rem;
+        left: 10.65vw;
+        font-size: 6.67vw;
+        line-height: 6.5vw;
+        margin: 0rem;
+        background-color: v.$white-clr;
+        background: linear-gradient(
+          90deg,
+          v.$white-clr 63.5%,
+          v.$black-clr 63.5%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      p {
+        margin: 0rem 2rem 3rem 0rem;
+      }
+    }
+  }
+}
