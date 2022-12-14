@@ -72,7 +72,12 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-between, flex-start);
+      @include m.displayFlex(column, nowrap, space-between, flex-start);
+      div {
+        &#top {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
     }
   }
   @include m.padScreens(37.5rem, 63.938rem) {
@@ -95,7 +100,12 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-between, flex-start);
+      @include m.displayFlex(column, nowrap, space-between, flex-start);
+      div {
+        &#top {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
     }
   }
   @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
@@ -123,7 +133,12 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-between, flex-start);
+      @include m.displayFlex(column, nowrap, space-between, flex-start);
+      div {
+        &#top {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
     }
   }
   @include m.wideScreens(31.25rem, 73.75rem) {
@@ -151,7 +166,12 @@ body {
       }
     }
     footer {
-      @include m.displayFlex(row, nowrap, space-between, flex-start);
+      @include m.displayFlex(column, nowrap, space-between, flex-start);
+      div {
+        &#top {
+          @include m.displayFlex(row, nowrap, space-between, flex-start);
+        }
+      }
     }
   }
 }

@@ -48,39 +48,62 @@ const Location = () => {
         </div>
       </main>
       <footer className="loc">
-        <Image id="footerLogo" src={darkLogo} alt="" />
-        <p>
-          The Modern Art Gallery is free to all visitors and open seven days a
-          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-        </p>
-        <div id="social">
-          <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="noreferrer"
-            id="faceIcn"
-            aria-label='Visit our Facebook page'
-          >
-            <Image id="facebookIcon" src={facebookLogo} alt="" />
-          </a>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="noreferrer"
-            id="instaIcn"
-            aria-label='Visit our Instagram page'
-          >
-            <Image id="instagramIcon" src={instagramLogo} alt="" />
-          </a>
-          <a
-            href="https://www.google.com"
-            target="_blank"
-            rel="noreferrer"
-            id="twitIcn"
-            aria-label='Visit our Twitter page'
-          >
-            <Image id="twitterIcon" src={twitterLogo} alt="" />
-          </a>
+        <div id="top">
+          <Image id="footerLogo" src={darkLogo} alt="" />
+          <p>
+            The Modern Art Gallery is free to all visitors and open seven days a
+            week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+          </p>
+          <div id="social">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              id="faceIcn"
+              aria-label="Visit our Facebook page"
+            >
+              <Image id="facebookIcon" src={facebookLogo} alt="" />
+            </a>
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              id="instaIcn"
+              aria-label="Visit our Instagram page"
+            >
+              <Image id="instagramIcon" src={instagramLogo} alt="" />
+            </a>
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              id="twitIcn"
+              aria-label="Visit our Twitter page"
+            >
+              <Image id="twitterIcon" src={twitterLogo} alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="bottom">
+          <p>
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by
+            <a
+              href="https://www.frontendmentor.io/profile/Ahmed96Mah"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ahmed Mahmoud Abdalwahab
+            </a>
+            .
+          </p>
         </div>
       </footer>
     </div>

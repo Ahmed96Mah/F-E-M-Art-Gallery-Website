@@ -21,6 +21,20 @@ footer {
       width: 1.25rem;
     }
   }
+  #bottom {
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    p {
+      width: auto;
+      text-align: left;
+      a {
+        color: v.$paige-clr;
+        margin-left: 0.3rem;
+        text-decoration: none;
+      }
+    }
+  }
   &.loc {
     background-color: v.$paige-clr;
     p {
@@ -32,6 +46,20 @@ footer {
           saturate(1785%) hue-rotate(314deg) brightness(96%) contrast(86%);
       }
     }
+    #bottom {
+      font-size: 1rem;
+      width: 100%;
+      margin-top: 2rem;
+      p {
+        width: auto;
+        text-align: left;
+        a {
+          color: v.$white-clr;
+          margin-left: 0.3rem;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   /* ----------------------- Media Queries ----------------------- */
@@ -40,7 +68,19 @@ footer {
     padding: 3.5rem 2.5rem;
     p {
       width: 37.588%;
-      margin: 0rem;
+      //margin: 0rem;
+    }
+    #bottom {
+      p {
+        text-align: center;
+      }
+    }
+    &.loc {
+      #bottom {
+        p {
+          text-align: center;
+        }
+      }
     }
   }
   @include m.padScreens(37.5rem, 63.938rem) {
@@ -49,6 +89,18 @@ footer {
     p {
       width: 37.588%;
       margin: 0rem;
+    }
+    #bottom {
+      p {
+        text-align: center;
+      }
+    }
+    &.loc {
+      #bottom {
+        p {
+          text-align: center;
+        }
+      }
     }
   }
   @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
@@ -75,6 +127,11 @@ footer {
         }
       }
     }
+    #bottom {
+      p {
+        text-align: center;
+      }
+    }
     &.loc {
       #social {
         a {
@@ -89,6 +146,11 @@ footer {
               }
             }
           }
+        }
+      }
+      #bottom {
+        p {
+          text-align: center;
         }
       }
     }
@@ -117,6 +179,11 @@ footer {
         }
       }
     }
+    #bottom {
+      p {
+        text-align: center;
+      }
+    }
     &.loc {
       #social {
         a {
@@ -131,6 +198,11 @@ footer {
               }
             }
           }
+        }
+      }
+      #bottom {
+        p {
+          text-align: center;
         }
       }
     }
