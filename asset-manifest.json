@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/F-E-M-Art-Gallery-Website/static/css/main.261632eb.css",
-    "main.js": "/F-E-M-Art-Gallery-Website/static/js/main.c863cc77.js",
+    "main.css": "/F-E-M-Art-Gallery-Website/static/css/main.a94c8240.css",
+    "main.js": "/F-E-M-Art-Gallery-Website/static/js/main.97177ccd.js",
     "static/js/787.e0cd8e1e.chunk.js": "/F-E-M-Art-Gallery-Website/static/js/787.e0cd8e1e.chunk.js",
     "static/media/image-grid-1@2x.jpg": "/F-E-M-Art-Gallery-Website/static/media/image-grid-1@2x.e273e36816e3964b9bd8.jpg",
     "static/media/image-hero@2x.jpg": "/F-E-M-Art-Gallery-Website/static/media/image-hero@2x.aa8019eeacc818cb7a48.jpg",
@@ -15,12 +15,12 @@
     "static/media/icon-facebook.svg": "/F-E-M-Art-Gallery-Website/static/media/icon-facebook.f709ece0570d170ced9d6c48cd221027.svg",
     "static/media/icon-arrow-left.svg": "/F-E-M-Art-Gallery-Website/static/media/icon-arrow-left.c674d53cbd0fd283364905ea68a562a0.svg",
     "static/media/icon-arrow-right.svg": "/F-E-M-Art-Gallery-Website/static/media/icon-arrow-right.a24cfbb84a44181bc4a791c6d84327b3.svg",
-    "main.261632eb.css.map": "/F-E-M-Art-Gallery-Website/static/css/main.261632eb.css.map",
-    "main.c863cc77.js.map": "/F-E-M-Art-Gallery-Website/static/js/main.c863cc77.js.map",
+    "main.a94c8240.css.map": "/F-E-M-Art-Gallery-Website/static/css/main.a94c8240.css.map",
+    "main.97177ccd.js.map": "/F-E-M-Art-Gallery-Website/static/js/main.97177ccd.js.map",
     "787.e0cd8e1e.chunk.js.map": "/F-E-M-Art-Gallery-Website/static/js/787.e0cd8e1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.261632eb.css",
-    "static/js/main.c863cc77.js"
+    "static/css/main.a94c8240.css",
+    "static/js/main.97177ccd.js"
   ]
 }
